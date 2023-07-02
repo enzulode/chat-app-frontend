@@ -1,0 +1,44 @@
+.message__outer {
+    display: flex;
+    flex-direction: column;
+}
+
+.message__outer[class='message__outer sent'] {
+    align-items: flex-end;
+}
+
+.message__outer[class='message__outer received'] {
+    align-items: flex-start;
+}
+
+.message__inner {
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 40px;
+    max-width: 80%;
+    overflow-wrap: break-word;
+}
+
+.message__inner[class='message__inner sent'] {
+    background-color: rgb(56, 56, 248);
+    color: white;
+}
+
+.message__inner[class='message__inner received'] {
+    background-color: rgb(135, 135, 135);
+    color: black;
+}
+
+
+.message__sender {
+    font-size: 12px;
+    margin: 5px;
+    font-weight: 600;
+}
+
+.message__text {
+    font-size: 18px;
+    padding: 10px;
+}
